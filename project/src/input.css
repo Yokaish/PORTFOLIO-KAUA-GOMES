@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.icon-pulse {
+    animation: colorChange 5s ease-in-out infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        filter: brightness(100%) hue-rotate(0deg);
+    }
+
+    50% {
+        filter: brightness(50%) hue-rotate(180deg);
+    }
+
+    100% {
+        filter: brightness(100%) hue-rotate(0deg);
+    }
+}
