@@ -602,6 +602,18 @@ video {
   margin-top: 1.25rem;
 }
 
+.mr-10{
+  margin-right: 2.5rem;
+}
+
+.ml-10{
+  margin-left: 2.5rem;
+}
+
+.mr-20{
+  margin-right: 5rem;
+}
+
 .block{
   display: block;
 }
@@ -634,12 +646,68 @@ video {
   height: 100vh;
 }
 
+.h-\[68px\]{
+  height: 68px;
+}
+
+.h-\[18rem\]{
+  height: 18rem;
+}
+
+.h-\[12rem\]{
+  height: 12rem;
+}
+
+.h-\[14rem\]{
+  height: 14rem;
+}
+
+.h-\[2rem\]{
+  height: 2rem;
+}
+
+.h-\[1rem\]{
+  height: 1rem;
+}
+
+.h-\[1\.5rem\]{
+  height: 1.5rem;
+}
+
+.h-\[1\.4rem\]{
+  height: 1.4rem;
+}
+
+.h-\[6rem\]{
+  height: 6rem;
+}
+
+.h-\[20rem\]{
+  height: 20rem;
+}
+
+.h-\[22rem\]{
+  height: 22rem;
+}
+
+.h-\[19rem\]{
+  height: 19rem;
+}
+
+.h-\[rem\]{
+  height: rem;
+}
+
 .w-\[4rem\]{
   width: 4rem;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-\[50\%\]{
+  width: 50%;
 }
 
 .cursor-pointer{
@@ -771,6 +839,14 @@ video {
   padding-top: 1.25rem;
 }
 
+.pr-10{
+  padding-right: 2.5rem;
+}
+
+.pl-\[-300px\]{
+  padding-left: -300px;
+}
+
 .text-center{
   text-align: center;
 }
@@ -849,6 +925,10 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:relative{
+    position: relative;
+  }
+
   .sm\:mb-0{
     margin-bottom: 0px;
   }
