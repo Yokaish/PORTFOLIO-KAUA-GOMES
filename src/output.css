@@ -673,6 +673,22 @@ video {
   margin-left: 1rem;
 }
 
+.ml-\[4\.5rem\]{
+  margin-left: 4.5rem;
+}
+
+.ml-\[20px\]{
+  margin-left: 20px;
+}
+
+.ml-\[18px\]{
+  margin-left: 18px;
+}
+
+.mr-\[\]{
+  margin-right: ;
+}
+
 .block{
   display: block;
 }
@@ -1088,6 +1104,10 @@ video {
 
   .sm\:mr-40{
     margin-right: 10rem;
+  }
+
+  .sm\:mr-0{
+    margin-right: 0px;
   }
 
   .sm\:block{
