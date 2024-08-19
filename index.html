@@ -20,8 +20,8 @@
             <div>
                 <img class="cursor-pointer" src="img/k1-logo.png" alt="Logo">
             </div>
-            <nav>
-                <ul class="flex gap-10 text-custom-white cursor-pointer text-base">
+            <nav class="sm:block">
+                <ul class="hidden sm:flex gap-10 text-custom-white cursor-pointer text-base">
                     <li>ABOUT ME</li>
                     <li>PROJECTS</li>
                     <li>TECHNOLOGIES</li>
@@ -34,44 +34,48 @@
         <section class="flex flex-col items-center justify-center h-screen">
             <div class="flex flex-col items-center gap-5" data-aos="fade-down" data-aos-duration="1000">
                 <div class="flex flex-col items-center">
-                    <h2 class="text-custom-white font-light text-1xl">FRONT-END DEVELOPER</h2>
-                    <h1 class="text-white text-5xl">KAUA GOMES</h1>
+                    <!-- Ajuste de fontes usando breakpoints -->
+                    <h2 class="text-custom-white font-light text-sm sm:text-lg">FRONT-END DEVELOPER</h2>
+                    <h1 class="text-white text-3xl sm:text-5xl">KAUA GOMES</h1>
                 </div>
                 <div>
-                    <h2 class="text-custom-white font-light text-1xl">UI/UX Designer & Developer @ VIKARO</h2>
+                    <h2 class="text-custom-white font-light text-sm sm:text-lg">UI/UX Designer & Developer @ VIKARO</h2>
                 </div>
             </div>
-            <div class="flex flex-col items-center gap-5 h-screen justify-end p-10 absolute" data-aos="fade-up"
-                data-aos-duration="1000">
-                <p class="text-white text-base">SCROLL DOWN</p>
+            <div class="flex flex-col items-center gap-5 h-screen justify-end p-10 absolute" data-aos="fade-up" data-aos-duration="1000">
+                <p class="text-white text-xs sm:text-base">SCROLL DOWN</p>
                 <img src="icons/my-arrow.svg" alt="Arrow">
             </div>
         </section>
+        
 
     </section>
 
     <!-- Projects Section -->
     <section class="p-10 w-full h-full pb-0">
-        <div class="flex justify-between items-center">
+        <div class="flex items-center justify-center sm:justify-between">
             <p class="mb-10">PROJECTS</p>
         </div>
         <div class="flex items-center" data-aos="fade-down" data-aos-duration="1000">
-            <div>
+            <div class="hidden sm:block">
                 <img src="img/example-project.png" alt="">
             </div>
-            <div class="ml-40">
+            <div class="sm:ml-40 text-center sm:text-start">
                 <h2 class="mb-5 text-3xl">PROJECT-ONE</h2>
-                <div class="flex gap-5 mb-5">
-                    <div class="bg-custom-dark-gray p-1 w-[5rem] text-center text-custom-white">HTML5</div>
-                    <div class="bg-custom-dark-gray p-1 w-[5rem] text-center text-custom-white">CSS3</div>
-                    <div class="bg-custom-dark-gray p-1 w-[5rem] text-center text-custom-white">JS</div>
+                <div class="flex gap-5 mb-5 justify-center sm:justify-start text-xs sm:text-sm">
+                    <div class="bg-custom-dark-gray p-1 w-[4rem] sm:w-[5rem] text-center text-custom-white">HTML5</div>
+                    <div class="bg-custom-dark-gray p-1 w-[4rem] sm:w-[5rem] text-center text-custom-white">CSS3</div>
+                    <div class="bg-custom-dark-gray p-1 w-[4rem] sm:w-[5rem] text-center text-custom-white">JS</div>
                 </div>
-                <div class="w-[30rem] uppercase text-custom-white text-sm">
+                <div class="sm:w-[30rem] uppercase text-custom-white text-xs sm:text-sm">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut doloremque quia in cumque
                         architecto? Quam facere soluta corporis dolores accusantium accusamus, ad quidem, nam minus,
                         dolor a mollitia perferendis pariatur!</p>
-                </div>
-                <div class="mt-5 flex gap-5 items-center cursor-pointer">
+                        <div class="block pt-5 pb-5 sm:hidden">
+                            <img src="img/example-project.png" alt="">
+                        </div>
+                </div>   
+                <div class="mt-5 flex gap-5 items-center cursor-pointer justify-center sm:justify-start">
                     <a href="#">VIEW PROJECT</a>
                     <img src="icons/project-arrow-icon.svg" alt="">
                 </div>
@@ -81,23 +85,26 @@
         <div class="h-[0.1px] bg-custom-white my-10 opacity-20"></div>
 
 
-        <div class="flex items-center flex-row-reverse" data-aos="fade-up" data-aos-duration="1000">
-            <div>
+        <div class="flex items-center" data-aos="fade-down" data-aos-duration="1000">
+            <div class="hidden sm:block">
                 <img src="img/example-project.png" alt="">
             </div>
-            <div class=" flex flex-col mr-40 items-end">
-                <h2 class="mb-5 align-end text-3xl">PROJECT-ONE</h2>
-                <div class="flex gap-5 mb-5">
-                    <div class="bg-custom-dark-gray p-1 w-[5rem] text-center text-custom-white">HTML5</div>
-                    <div class="bg-custom-dark-gray p-1 w-[5rem] text-center text-custom-white">CSS3</div>
-                    <div class="bg-custom-dark-gray p-1 w-[5rem] text-center text-custom-white">JS</div>
+            <div class="sm:ml-40 text-center sm:text-start">
+                <h2 class="mb-5 text-3xl">PROJECT-ONE</h2>
+                <div class="flex gap-5 mb-5 justify-center sm:justify-start text-xs sm:text-sm">
+                    <div class="bg-custom-dark-gray p-1 w-[4rem] sm:w-[5rem] text-center text-custom-white">HTML5</div>
+                    <div class="bg-custom-dark-gray p-1 w-[4rem] sm:w-[5rem] text-center text-custom-white">CSS3</div>
+                    <div class="bg-custom-dark-gray p-1 w-[4rem] sm:w-[5rem] text-center text-custom-white">JS</div>
                 </div>
-                <div class="w-[30rem] text-end uppercase text-custom-white text-sm">
+                <div class="sm:w-[30rem] uppercase text-custom-white text-xs sm:text-sm">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut doloremque quia in cumque
                         architecto? Quam facere soluta corporis dolores accusantium accusamus, ad quidem, nam minus,
                         dolor a mollitia perferendis pariatur!</p>
-                </div>
-                <div class="mt-5 flex gap-5 items-center cursor-pointer">
+                        <div class="block pt-5 pb-5 sm:hidden">
+                            <img src="img/example-project.png" alt="">
+                        </div>
+                </div>   
+                <div class="mt-5 flex gap-5 items-center cursor-pointer justify-center sm:justify-start">
                     <a href="#">VIEW PROJECT</a>
                     <img src="icons/project-arrow-icon.svg" alt="">
                 </div>
@@ -107,22 +114,25 @@
         <div class="h-[0.1px] bg-custom-white my-10 opacity-20"></div>
 
         <div class="flex items-center" data-aos="fade-down" data-aos-duration="1000">
-            <div>
+            <div class="hidden sm:block">
                 <img src="img/example-project.png" alt="">
             </div>
-            <div class="ml-40">
+            <div class="sm:ml-40 text-center sm:text-start">
                 <h2 class="mb-5 text-3xl">PROJECT-ONE</h2>
-                <div class="flex gap-5 mb-5">
-                    <div class="bg-custom-dark-gray p-1 w-[5rem] text-center text-custom-white">HTML5</div>
-                    <div class="bg-custom-dark-gray p-1 w-[5rem] text-center text-custom-white">CSS3</div>
-                    <div class="bg-custom-dark-gray p-1 w-[5rem] text-center text-custom-white">JS</div>
+                <div class="flex gap-5 mb-5 justify-center sm:justify-start text-xs sm:text-sm">
+                    <div class="bg-custom-dark-gray p-1 w-[4rem] sm:w-[5rem] text-center text-custom-white">HTML5</div>
+                    <div class="bg-custom-dark-gray p-1 w-[4rem] sm:w-[5rem] text-center text-custom-white">CSS3</div>
+                    <div class="bg-custom-dark-gray p-1 w-[4rem] sm:w-[5rem] text-center text-custom-white">JS</div>
                 </div>
-                <div class="w-[30rem] uppercase text-custom-white text-sm">
+                <div class="sm:w-[30rem] uppercase text-custom-white text-xs sm:text-sm">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut doloremque quia in cumque
                         architecto? Quam facere soluta corporis dolores accusantium accusamus, ad quidem, nam minus,
                         dolor a mollitia perferendis pariatur!</p>
-                </div>
-                <div class="mt-5 flex gap-5 items-center cursor-pointer">
+                        <div class="block pt-5 pb-5 sm:hidden">
+                            <img src="img/example-project.png" alt="">
+                        </div>
+                </div>   
+                <div class="mt-5 flex gap-5 items-center cursor-pointer justify-center sm:justify-start">
                     <a href="#">VIEW PROJECT</a>
                     <img src="icons/project-arrow-icon.svg" alt="">
                 </div>
@@ -133,10 +143,11 @@
 
     <!-- Technologies Section -->
     <section class="m-10">
-        <div class="mb-10">
+        <div class="h-[0.1px] bg-custom-white my-10 opacity-20 block sm:hidden"></div>
+        <div class="mb-10 w-full text-center sm:text-start">
             <p>TECHNOLOGIES</p>
         </div>
-        <div class="w-full flex items-center justify-between" data-aos="fade-up" data-aos-duration="1000">
+        <div class="w-full flex items-center justify-between hidden sm:flex" data-aos="fade-up" data-aos-duration="1000">
             <div class="flex flex-col items-center gap-4 cursor-pointer text-custom-white">
                 <img class="icon-pulse opacity-80" src="icons/html-svg.svg" alt="">
                 <p>HTML 5</p>
@@ -162,19 +173,52 @@
                 <p>GITHUB</p>
             </div>
         </div>
+
+        <marquee class="block sm:hidden" behavior="" direction="">
+            <div class="flex items-center w-full marquee-content">
+                <div class="flex flex-col items-center mx-8 cursor-pointer text-custom-white">
+                    <img class="icon-pulse opacity-80" src="icons/html-svg.svg" alt="">
+                    <p class="pt-5">HTML 5</p>
+                </div>
+                <div class="flex flex-col items-center mx-8 cursor-pointer text-custom-white">
+                    <img class="icon-pulse opacity-80" src="icons/css-svg.svg" alt="">
+                    <p class="pt-5">CSS 3</p>
+                </div>
+                <div class="flex flex-col items-center mx-8 cursor-pointer text-custom-white">
+                    <img class="icon-pulse opacity-80" src="icons/js-svg.svg" alt="">
+                    <p class="pt-5">JAVASCRIPT</p>
+                </div>
+                <div class="flex flex-col items-center mx-8 cursor-pointer text-custom-white">
+                    <img class="icon-pulse opacity-80" src="icons/tw-svg.svg" alt="">
+                    <p class="pt-5">TAILWIND CSS</p>
+                </div>
+                <div class="flex flex-col items-center mx-8 cursor-pointer text-custom-white">
+                    <img class="icon-pulse opacity-80" src="icons/figma-svg.svg" alt="">
+                    <p class="pt-5">FIGMA</p>
+                </div>
+                <div class="flex flex-col items-center mx-8 cursor-pointer text-custom-white">
+                    <img class="icon-pulse opacity-80" src="icons/github-svg.svg" alt="">
+                    <p class="pt-5">GITHUB</p>
+                </div>
+            </div>
+        </marquee>
+        
+
         <div class="h-[0.1px] bg-custom-white my-10 opacity-20"></div>
     </section>
 
+
+    <!-- Phrase Section -->
     <section class="flex flex-col items-center w-full pb-20 pt-10" data-aos="fade" data-aos-duration="1000">
-        <div class="flex justify-center w-full gap-60">
-            <h2 class="text-3xl text-custom-white p-2">THIS INS'T JUST</h2>
-            <h2 class="text-3xl text-custom-white p-2">PROGRAMMING</h2>
+        <div class="flex justify-center w-full gap-24 sm:gap-60 z-10">
+            <h2 class="text-xs sm:text-3xl text-custom-white mb-4 sm:mb-0 p-3 sm:p-2">THIS INS'T JUST</h2>
+            <h2 class="text-xs sm:text-3xl text-custom-white mb-4 sm:mb-0 p-3 sm-p-2">PROGRAMMING</h2>
         </div>
         <div class="flex justify-center w-full gap-30">
         </div>
         <div class="flex justify-center items-center flex-col">
-            <h2 class="text-7xl z-10">IT'S THE FUTURE</h2>
-            <img class="absolute opacity-80" src="img/back-future.png" alt="">
+            <h2 class="text-2xl sm:text-7xl z-10">IT'S THE FUTURE</h2>
+            <img class="absolute opacity-80 h-[16rem] sm:h-auto" src="img/back-future.png" alt="">
         </div>
     </section>
 
@@ -186,13 +230,13 @@
     <section>
         <footer class="bg-custom-footer-background bg-cover bg-no-repeat flex items-center w-full justify-between px-10">
             <div class="flex items-center">
-                <img src="img/footer-liquid.png" alt="">
+                <img class="hidden sm:block" src="img/footer-liquid.png" alt="">
                 <div class="flex flex-col h-full gap-28" data-aos="fade-right" data-aos-duration="1000">
                     <div class="h-full flex flex-col gap-5">
-                        <div class="flex flex-col h-full gap-2">
+                        <div class="flex flex-col h-full gap-2 mt-5 sm:mt-0">
                             <p>CONTACT ME</p>
-                            <p class="text-custom-white text-sm cursor-pointer">(37) 99934-3004</p>
-                            <p class="text-custom-white text-sm cursor-pointer">KAUAGOMS44@GMAIL.COM</p>
+                            <p class="text-custom-white text-xs sm:text-sm cursor-pointer">(37) 99934-3004</p>
+                            <p class="text-custom-white text-xs sm:text-sm cursor-pointer">KAUAGOMS44@GMAIL.COM</p>
                         </div>
                         <div>
                             <div class="flex flex-col justify-between h-full gap-2">
@@ -204,13 +248,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-custom-white text-sm">
+                    <div class="text-custom-white text-xs sm:text-sm mb-5 sm:mb-0">
                         <p>K1 ® 2024 ALL RIGHTS RESERVED</p>
                     </div>
                 </div>
             </div>
             <div data-aos="fade-down" data-aos-duration="1000">
-                <img src="img/face-footer.png" alt="">
+                <img class="h-[8rem] sm:h-auto" src="img/face-footer.png" alt="">
             </div>
         </footer>
     </section>
