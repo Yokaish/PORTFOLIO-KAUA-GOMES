@@ -584,6 +584,10 @@ video {
   margin: 1.25rem;
 }
 
+.m-0{
+  margin: 0px;
+}
+
 .mx-8{
   margin-left: 2rem;
   margin-right: 2rem;
@@ -602,6 +606,11 @@ video {
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.mx-10{
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mb-10{
@@ -1009,6 +1018,24 @@ video {
 @media (min-width: 640px){
   .sm\:relative{
     position: relative;
+  }
+
+  .sm\:m-10{
+    margin: 2.5rem;
+  }
+
+  .sm\:m-0{
+    margin: 0px;
+  }
+
+  .sm\:my-10{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .sm\:mb-0{
