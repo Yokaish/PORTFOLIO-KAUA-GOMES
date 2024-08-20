@@ -581,19 +581,14 @@ video {
   margin-right: 2.5rem;
 }
 
-.mx-2{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-}
-
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .mb-10{
@@ -721,6 +716,11 @@ video {
 .bg-custom-white{
   --tw-bg-opacity: 1;
   background-color: rgb(200 200 200 / var(--tw-bg-opacity));
+}
+
+.bg-red-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
 .bg-custom-footer-background{
@@ -879,6 +879,16 @@ video {
   height: 50px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+#mobile-menu {
+  display:none
+}
+
+#mobile-menu.open {
+  display: block;
+  /* Show menu when open */
+  background-color: blue;
 }
 
 @media (min-width: 640px){

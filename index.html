@@ -15,12 +15,32 @@
         <video class="absolute inset-0 object-cover w-full h-screen -z-10" autoplay muted loop>
             <source src="img/background.mp4" type="video/mp4">
         </video>
+
         <!-- Header -->
         <header class="flex absolute items-center justify-between p-8 w-full bg-cover bg-center">
-            <div>
+            <button>
                 <img class="cursor-pointer" src="img/k1-logo.png" alt="Logo">
+            </button>
+            <div class="flex flex-col">
+                <div class="cursor-pointer">
+                    <img class="block sm:hidden" id="menu-icon" src="/icons/hamb-menu.svg" alt="">
+                </div>
+                <div class="hidden" id="mobile-menu">
+                    <ul>
+                        <li><a href="#section1">Seção 1</a></li>
+                        <li><a href="#section2">Seção 2</a></li>
+                        <li><a href="#section3">Seção 3</a></li>
+                        <li><a href="#section4">Seção 4</a></li>
+                    </ul>
+                </div>
             </div>
-            <nav class="sm:block">
+
+
+
+
+            <!---------------------------------------------------------------->
+
+            <nav class="hidden sm:block">
                 <ul class="hidden sm:flex gap-10 text-custom-white cursor-pointer text-base">
                     <li>ABOUT ME</li>
                     <li>PROJECTS</li>
@@ -263,6 +283,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <script src="main.js"></script>
 </body>
 
 </html>

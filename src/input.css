@@ -27,3 +27,12 @@
     height: 50px;
     object-fit: contain; 
 }
+
+#mobile-menu {
+	display:none
+}
+
+#mobile-menu.open {
+    display: block; /* Show menu when open */
+    background-color: blue;
+}
