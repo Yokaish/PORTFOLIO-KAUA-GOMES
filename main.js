@@ -9,7 +9,3 @@ function toggleMenu() {
         icon.src = "icons/hamb-menu-closed.svg";
     }
 }
-
-icon = addEventListener('click', function () {
-    toggleMenu();
-})
