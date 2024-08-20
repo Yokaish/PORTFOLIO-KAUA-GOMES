@@ -631,6 +631,18 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mt-\[30px\]{
+  margin-top: 30px;
+}
+
+.mt-28{
+  margin-top: 7rem;
+}
+
 .block{
   display: block;
 }
